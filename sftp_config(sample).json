@@ -1,0 +1,7 @@
+{
+    "host": "sftp.example.com",
+    "username": "your_username",
+    "password": "your_password",
+    "remote_dir": "/remote/folder/to/backup",
+    "local_backup_dir": "/local/backup/folder"
+}

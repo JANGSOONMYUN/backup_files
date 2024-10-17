@@ -1,0 +1,6 @@
+__pycache__
+data_backup
+db_backup
+test_backup
+db_config.json
+sftp_config.json
