@@ -17,5 +17,10 @@ def run():
     backup_all_db_tables(db_dir)
     backup_data_dir()
 
+# 매일 오전 4시에 run 함수를 실행하는 작업 예약
+schedule.every().day.at("04:00").do(run)
+
 if __name__ == "__main__":
-    run()
+    while True:
+        schedule.run_pending()  # 예약된 작업 실행
+        time.sleep(1)  # 1초 대기 후 다시 확인
